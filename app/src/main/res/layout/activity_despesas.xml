@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.senaijandira.financas.DespesasActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:background="#e2f5f5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Saldo Atual:"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="$00,00"
+            android:id="@+id/txt_total"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Despesas"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transporte"
+            android:id="@+id/btn_transporte"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saúde"
+            android:id="@+id/btn_saude"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lazer"
+            android:id="@+id/btn_lazer"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moradia"
+            android:id="@+id/btn_moradia"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salário"
+            android:id="@+id/btn_salario"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outros"
+            android:id="@+id/btn_outros"
+            android:layout_marginTop="5dp"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:text="Entrar"
+        android:layout_gravity="left"
+        android:onClick="cadastrarGasto"
+        />
+
+</LinearLayout>

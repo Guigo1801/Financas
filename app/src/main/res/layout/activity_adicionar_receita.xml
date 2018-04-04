@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.senaijandira.financas.AdicionarReceitaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:background="#e2f5f5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Saldo Atual:"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="$00,00"
+            android:id="@+id/txt_total"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Salário"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txt_salario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="00,00"
+            android:textAlignment="textEnd"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Aluguel à Receber"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txt_aluguel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="00,00"
+            android:textAlignment="textEnd"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Duplicatas à Receber"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txt_duplicatas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="00,00"
+            android:textAlignment="textEnd"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Outros"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txt_outros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="00,00"
+            android:textAlignment="textEnd"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Saldo:"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text="00,00"
+            android:id="@+id/txt_saldo"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#04d40f"
+            android:text="calcular"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="145dp"
+            android:background="#f1f1f1"
+            android:text="salvar"
+            android:textColor="#000"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
