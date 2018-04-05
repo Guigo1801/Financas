@@ -71,7 +71,7 @@ public class AdicionarReceitaActivity extends AppCompatActivity {
         valores.put("outros", r.getOutros());
 
 
-        
+
 
         Long id = db.insert("tbl_contatos", null, valores);
 
